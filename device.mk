@@ -26,9 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-LOCAL_PATH := device/oneplus/ONEPLUSN200-TMO
+LOCAL_PATH := device/oneplus/dre8
 
-include kernel/oneplus/ONEPLUSN200-TMO/Android.mk
+include kernel/oneplus/dre8/Android.mk
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -125,7 +125,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
 
 PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/renoir/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
+    $(OUT_DIR)/target/product/dre8/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
 PRODUCT_PACKAGES += \
     qcom_decrypt \
