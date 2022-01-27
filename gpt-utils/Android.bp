@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils.ONEPLUSN200-TMO",
+    name: "libgptutils.dre8",
     vendor: true,
     recovery_available: true,
     shared_libs: [
