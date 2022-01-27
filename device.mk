@@ -26,9 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-LOCAL_PATH := device/xiaomi/renoir
+LOCAL_PATH := device/oneplus/ONEPLUSN200-TMO
 
-include kernel/xiaomi/renoir/Android.mk
+include kernel/oneplus/ONEPLUSN200-TMO/Android.mk
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
