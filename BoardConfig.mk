@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/oneplus/ONEPLUSN200-TMO
+DEVICE_PATH := device/oneplus/dre8
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -38,7 +38,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := ONEPLUSN200-TMO
+TARGET_OTA_ASSERT_DEVICE := dre8
 
 # A/B
 AB_OTA_UPDATER := true
@@ -86,7 +86,7 @@ KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := dre_defconfig
-TARGET_KERNEL_SOURCE := kernel/oneplus/ONEPLUSN200-TMO
+TARGET_KERNEL_SOURCE := kernel/oneplus/dre8
 NEED_KERNEL_MODULE_RECOVERY := true
 
 # Metadata
