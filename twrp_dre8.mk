@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from renoir device
-$(call inherit-product, device/oneplus/ONEPLUSN200-TMO/device.mk)
+$(call inherit-product, device/oneplus/dre8/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := ONEPLUSN200-TMO
-PRODUCT_NAME := twrp_ONEPLUSN200-TMO
+PRODUCT_DEVICE := dre8
+PRODUCT_NAME := twrp_dre8
 PRODUCT_BRAND := Oneplus
 PRODUCT_MODEL := Nord N200 5G
 PRODUCT_MANUFACTURER := Oneplus
